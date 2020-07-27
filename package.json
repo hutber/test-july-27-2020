@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel ./index.js -d build",
     "eslint": "eslint . --fix",
-    "test": "jest test . --watchAll=true",
+    "test": "jest test .",
+    "test:watch": "jest test . --watchAll=true",
     "lint": "npm run lint-scripts",
     "lint-scripts": "eslint './{**,.}/*.js'",
     "commit": "npx git-cz"
