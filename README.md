@@ -1,11 +1,11 @@
-#July 27th JS Test
+# July 27th JS Test
 
-##Install
+## Install
 
 ```javascript
 $ npm install @hutber/requestMultipleUrls
 ```
-##Useage
+## Useage
 
 ```javascript
 import requestMultipleUrls from '@hutber/requestMultipleUrls'
