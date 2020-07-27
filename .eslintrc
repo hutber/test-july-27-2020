@@ -1,0 +1,49 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["standard", "prettier", "eslint:recommended", "plugin:import/recommended"],
+  "plugins": ["prettier", "jest", "import"],
+  "rules": {
+    "no-console": "error",
+    "strict": [2, "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test.js"]
+      }
+    ],
+    "prefer-const": "error",
+    "no-unused-vars": "error",
+    "import/unambiguous": "off",
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "prettier/prettier": "error",
+    "import/no-unresolved": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["external", "builtin", "parent", "sibling", "index"]
+      }
+    ],
+    "no-shadow": "error",
+    "import/no-named-as-default": 0,
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error",
+    "no-extra-parens": ["error"],
+    "id-blacklist": [
+      "error",
+      "injectIntl",
+      "WithDelayedQuery",
+      "WithMutationLoadingState",
+      "WithPageError",
+      "WithPageLoading",
+      "WithQueryLoadingState",
+      "withStyles"
+    ]
+  }
+}

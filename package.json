@@ -1,0 +1,57 @@
+{
+  "name": "test_july_27_2020",
+  "version": "1.0.0",
+  "description": "July 27th's Test",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm build",
+    "eslint": "eslint . --fix",
+    "test": "jest test . --watchAll=true",
+    "lint": "npm run lint-scripts",
+    "lint-scripts": "eslint './{**,.}/*.js'",
+    "commit": "npx git-cz"
+  },
+  "dependencies": {
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.2",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-wyze": "^3.4.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hutber/test-july-27-2020.git"
+  },
+  "author": "jamie@hutber.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hutber/test-july-27-2020/issues"
+  },
+  "homepage": "https://github.com/hutber/test-july-27-2020#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4"
+  }
+}
