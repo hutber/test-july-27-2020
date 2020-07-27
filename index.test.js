@@ -16,7 +16,7 @@ const responses = {
   'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/gbp-usd.json': gbpUsd,
 }
 
-// alternatives to quick global.fetc = jasmine/nock
+// alternatives to my quick global.fetc = jasmine/nock
 global.fetch = (endpoint, key) =>
   Promise.resolve({
     json: () => {
